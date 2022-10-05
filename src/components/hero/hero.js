@@ -20,7 +20,7 @@ export default function hero() {
 
   heading.classList.add('flex', 'center');
   header.classList.add('header', 'flex');
-  hero.classList.add('hero', 'flex-column');
+  hero.classList.add('hero', 'flex-column', 'center');
 
   heading.append(headingSpan, ' Restaurants');
   header.append(heading, button1);

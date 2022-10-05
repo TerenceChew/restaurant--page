@@ -50,87 +50,97 @@ button {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 42px;
+  padding: 18px 14px;
   color: white;
 }
 
 .header > h1 {
   gap: 11px;
-  font-size: 1.95rem;
+  font-size: .95rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .header > h1 > span {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-family: 'Berkshire Swash', cursive;
 }
 
 .header > button {
-  padding: 11px 30px;
+  padding: 4px 10px;
   border: 2px solid white;
   border-radius: 28px;
   background-color: transparent;
   color: white;
-  font-size: 1rem;
+  font-size: .8rem;
+}
+
+.hero {
+  text-align: center;
+  gap: 11px;
 }
 
 .hero > h1 {
-  width: 700px;
+  width: 90%;
   color: white;
-  font-size: 4.15rem;
-  text-align: center;
+  font-size: 2.3rem;
   font-family: 'Alatsi', sans-serif;
   letter-spacing: 1px;
 }
 
 .hero > p {
+  width: 90%;
   color: white;
-  font-size: 1.35rem;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
 .hero > button {
-  padding: 15px 45px;
+  padding: 8px 20px;
   border: none;
   border-radius: 40px;
   background-color: rgb(252, 226, 154);
   color: black;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .hero > img {
-  width: min(850px, 90%);
+  width: 100%;
   height: auto;
 }
 
 .grid {
-  padding: 180px 25px;
+  padding: 80px 20px;
   flex-wrap: wrap;
-  gap: 48px;
+  gap: 58px;
 }
 
 .grid-item {
-  width: 385px;
+  width: min(385px, 100%);
   gap: 20px
 }
 
+.grid-item > img {
+  width: 100%;
+}
+
 .grid-item-container {
-  width: 300px;
+  width: 95%;
   justify-content: center;
   align-items: start;
   gap: 20px;
 }
 
 .grid-item-container > h2 {
+  font-size: 1.3rem;
   font-family: 'Alatsi', sans-serif;
 }
 
 .grid-item-container > p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: .95rem;
+  font-size: .9rem;
 }
 
 .btn-container {
@@ -142,7 +152,7 @@ button {
   border: none;
   border-bottom: 2px solid black;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .btn-container > img {
@@ -151,49 +161,49 @@ button {
 }
 
 .section {
-  gap: 24px;
-  padding: 200px 50px;
+  gap: 20px;
+  padding: 100px 15px;
   background-color: rgb(124, 16, 52);
   color: white;
 }
 
 .section > h1 {
   gap: 16px;
-  font-size: 3.35rem;
+  font-size: 1.35rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .section > h1 > span {
-  font-size: 3.6rem;
+  font-size: 1.9rem;
   font-family: 'Berkshire Swash', cursive;
 }
 
 .section > div {
   height: 2px;
-  width: 700px;
+  width: min(300px, 85%);
   border-top: 2px solid white;
 }
 
 .section > p {
-  font-size: 4.1rem;
+  font-size: 2.25rem;
   letter-spacing: 2px;
   font-family: 'Lobster', cursive;
 }
 
 .section > button {
   margin-top: 20px;
-  padding: 15px 48px;
+  padding: 10px 22px;
   border: none;
   border-radius: 40px;
   background-color: white;
   color: black;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
 }
 
-
 .footer {
+  flex-direction: column;
   gap: 14px;
-  padding: 40px 38px;
+  padding: 30px 15px;
   background-color: white;
 }
 
@@ -203,9 +213,9 @@ button {
 }
 
 .footer > div {
-  width: 2px;
-  height: 32px;
-  border-left: 1px solid black;
+  width: 115px;
+  height: 2px;
+  border-top: 1px solid black;
 }
 
 .footer > p {
@@ -230,3 +240,122 @@ button:focus,
   outline: 2px solid rgb(53, 53, 255);
 }
 
+@media (min-width: 600px) {
+  .header {
+    padding: 35px 25px;
+  }
+
+  .header > h1 {
+    gap: 14px;
+    font-size: 1.35rem;
+  }
+  
+  .header > h1 > span {
+    font-size: 2.15rem;
+  }
+  
+  .header > button {
+    padding: 6px 15px;
+    font-size: .9rem;
+  }
+
+  .hero {
+    gap: 24px;
+  }
+    
+  .hero > h1 {
+    width: clamp(500px, 60%, 700px);
+    font-size: calc(2rem + 2vw);
+  }
+  
+  .hero > p {
+    font-size: 1.1rem;
+  }
+  
+  .hero > button {
+    padding: 11px 28px;
+    font-size: 1.15rem;
+  }
+  
+  .hero > img {
+    width: min(850px, 100%);
+    height: auto;
+  }
+  
+  .grid {
+    padding: 150px 25px;
+  }
+  
+  .grid-item {
+    width: min(410px, 100%);
+  }
+  
+  .grid-item-container > h2 {
+    font-size: 1.45rem;
+  }
+  
+  .grid-item-container > p {
+    font-size: 1rem;
+  }
+  
+  .btn-container > button {
+    font-size: .95rem;
+  }
+  
+  .section {
+    padding: 180px 20px;
+  }
+  
+  .section > h1 {
+    font-size: 2.4rem;
+  }
+  
+  .section > h1 > span {
+    font-size: 3.25rem;
+  }
+  
+  .section > div {
+    width: min(700px, 85%);
+  }
+  
+  .section > p {
+    font-size: 3.9rem;
+  }
+  
+  .section > button {
+    margin-top: 20px;
+    padding: 14px 35px;
+    font-size: 1.3rem;
+  }
+  
+  .footer {
+    flex-direction: row;
+    padding: 40px 15px;
+  }
+  
+  .footer > div {
+    width: 2px;
+    height: 35px;
+    border-left: 1px solid black;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    padding: 35px 45px;
+  }
+
+  .header > h1 {
+    gap: 17px;
+    font-size: 1.5rem;
+  }
+  
+  .header > h1 > span {
+    font-size: 2.85rem;
+  }
+  
+  .header > button {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+}
