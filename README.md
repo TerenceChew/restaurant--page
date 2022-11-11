@@ -1,4 +1,4 @@
-# restaurant-page
+# Restaurant Page
 
 A page built to practice the use of ES6 modules and webpack.
 
